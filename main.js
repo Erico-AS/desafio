@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
     function Verificacao(e) {
         let seguranca = 0
         const carac = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
-        const caracLow = /[a-z]/;
+        const caracLow = /[a-z]/
         const caracUp = /[A-Z]/
         
         caracUp.test(e.toUpperCase()) ? seguranca++ : null
