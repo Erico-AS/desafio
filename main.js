@@ -17,19 +17,11 @@ window.addEventListener('load', () => {
         const caracLow = /[a-z]/;
         const caracUp = /[A-Z]/
         
-        if (caracUp.test(e.toUpperCase()) == true) {
-            seguranca++
-            console.log(seguranca, e)
-        } if (caracLow.test(e.toLowerCase()) == true) {
-            seguranca++
-            console.log(seguranca, e)
-        } if (e.length >= 7) {
-            seguranca++
-            console.log(seguranca, e)
-        } if (carac.test(e) == true) {
-            seguranca++
-            console.log(seguranca, e)
-        }
+        caracUp.test(e.toUpperCase()) ? seguranca++ : null
+        caracLow.test(e.toLowerCase()) ? seguranca++ : null
+        e.length >= 7 ? seguranca++ : null
+        carac.test(e) ? seguranca++ : null
+
         return seguranca
     }
 })
